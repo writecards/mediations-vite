@@ -25,9 +25,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- <div id="app"></div> -->
+    <div id="loading">
+      <img style="width: 100%" src="butterflies.gif" alt="loading" />
+    </div>
+
     <div id="mediations">
-      <!-- <a href="index.html">MEDIATIONS</a> -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li>
@@ -35,15 +37,6 @@
         </li>
       </ul>
     </div>
-    <!-- <script>
-      (function loadSkeletonData(){
-        const skeleton = {
-          html: ``,
-          css: ``,
-        }
-        document.querySelector('.card-container').innerHTML = skeleton.html.repeat(6)
-      })()
-    </script> -->
     <main class="card-container"></main>
     <script type="module" src="/main.js"></script>
   </body>

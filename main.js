@@ -1,9 +1,16 @@
 import './style.css'
 
+const loadingEl = document.querySelector("#loading");
+
+let loading = false;
+
 async function fetchDataFromAPIEndpoint(){
     const cards = await fetch('/api/fetchNotion')
     .then((res)=>res.json()
     .then((data)=> data.results));
+    if(!loading){
+        loadingEl.innerHTML = '';
+    }
 
     document.querySelector('.card-container').innerHTML =
     cards.map((card)=> `
