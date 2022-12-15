@@ -4,6 +4,7 @@ body {
   background-image: var(--gradient-6), var(--noise-3);
   filter: var(--noise-filter-1);
   color: black;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .card-container {
@@ -27,12 +28,14 @@ body {
 
 .card__heading {
   color: black;
+  font-size: large;
 }
 
 .card__content {
   display: grid;
   gap: var(--size-2);
   justify-content: center;
+  
 }
 .card__btn {
   background-color: var(--choco-6);
