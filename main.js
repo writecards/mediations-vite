@@ -7,7 +7,9 @@ async function fetchDataFromAPIEndpoint(){
 
     document.querySelector('.card-container').innerHTML =
     cards.map((card)=> `
+    
     <article class="card">
+    <a href = "${card.properties.Link.url}">
 <img
   src="${card.properties.Image.files[0].external.url}"
   alt="${card.properties.Name.title[0].plain_text}"
@@ -19,8 +21,9 @@ async function fetchDataFromAPIEndpoint(){
   ${card.properties.Content.rich_text[0].plain_text}
   </p>
 </div>
-
+</a>
 </article>
+
     `).join('')
 
    
