@@ -19,7 +19,7 @@ async function fetchDataFromAPIEndpoint(){
   ${card.properties.Content.rich_text[0].plain_text}
   </p>
 </div>
-<a href="${card.properties.Link.url}" class="card__btn">${card.properties.Btn_text.rich_text[0].plain_text}</a>
+
 </article>
     `).join('')
 
@@ -28,5 +28,5 @@ async function fetchDataFromAPIEndpoint(){
 
 fetchDataFromAPIEndpoint();
 
-
+// <a href="${card.properties.Link.url}" class="card__btn">${card.properties.Btn_text.rich_text[0].plain_text}</a>
 
