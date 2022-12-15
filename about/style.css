@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    place-content: center;
+    /* background-image: var(--gradient-6), var(--noise-3); */
+    background: url(https://images.pexels.com/photos/695657/pexels-photo-695657.jpeg?cs=srgb&dl=pexels-johann-piber-695657.jpg&fm=jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* filter: var(--noise-filter-1); */
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  a{
+    text-decoration: none;
+    color:rgb(255, 254, 254);
+  }
+a:visited{
+    color:white;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 800px;
+  }

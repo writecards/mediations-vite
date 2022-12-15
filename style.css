@@ -25,12 +25,12 @@ a{
   margin: var(--size-fluid-6);
   max-width: 1500px;
   /* padding-left: 400px; */
-  padding-top: 50px;
+
   
 }
 
 .card {
-  flex: 0 1 300px;
+  flex: 0 1 400px;
   grid-auto-flow: column dense;
   /* box-shadow: var(--shadow-6); */
   box-shadow: 0px 20px 30px  rgb(0, 0, 0);
@@ -39,7 +39,7 @@ a{
   /* display: grid; */
   display:block;
   overflow: scroll;
-  height: 500px;
+  /* height: 500px; */
   gap: var(--size-4);
   transition: all 250ms var(--ease-squish-2);
   border-radius: var(--radius-conditional-3);
@@ -69,6 +69,7 @@ a{
     margin:auto;
     width: 100px;
     height: auto;
+    justify-content: center;
 }
 
 /* .card__btn {
@@ -101,4 +102,10 @@ a{
 
 a:visited{
   color:white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
